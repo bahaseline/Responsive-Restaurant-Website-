@@ -1,0 +1,175 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
+header .sidenav
+{
+	height: 100%;
+	width: 0px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .95);
+	overflow-x: hidden;
+	padding-top: 6rem;
+	transition: .5s;
+	text-align: center;
+}
+
+header .sidenav a 
+{
+	font-size: 2.3rem;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	padding: .8rem 0;
+	font-family: 'Nothing You Could Do', cursive;
+}
+header .sidenav a:hover
+{
+	color: #cea570;
+}
+header .sidenav .closebtn
+{
+	position: absolute;
+	top: .5rem;
+	right: 3.3rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+
+body
+{
+width: 100vw;
+height: 100vh;
+background: linear-gradient(to left,rgba(0, 0, 0, .8),rgba(0, 0, 0, .5)),url(img/photo4.png);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container
+{
+width: 1000px;
+height: 700px;
+background: #fff;
+border-radius: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.form
+{
+width: 500px;
+padding-left: 50px;
+}
+.form label
+{
+font-family: arial;
+color: #222;
+font-weight: bold;
+margin-left: 10px;
+}
+.form input
+{
+width: 400px;
+height: 40px;
+border-radius: 50px;
+border: 2px solid #222;
+padding-left: 20px;
+margin-top: 10px;
+}
+.form textarea
+{
+border-radius: 50px;
+border: 2px solid #222;
+padding-left: 20px;
+margin-top: 10px;
+padding-top: 10px;
+}
+.btn
+{
+width: 150px;
+height: 45px;
+font-weight: bold;
+font-size: 15px;
+font-family: arial;
+border: none;
+background-color: #222;
+color: #fff;
+border-radius: 30px;
+cursor: pointer;
+}
+.image
+{
+width: 500px;
+
+}
+.image img
+{
+width: 450px;
+border-radius: 10%;
+}
+
+/* Style for the navigation menu */
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #bf8040;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+  }
+
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffff;
+	display: block;
+	transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+	color: #996633;
+	background-color: #cc8800;
+  }
+
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+
+  /* Style for the close button */
+  .sidenav .closebtn:hover {
+	color: #fff;
+  }
+
+  /* Style for the close button icon */
+  .sidenav .closebtn i {
+	color: #f2f2f2;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-height: 450px) {
+	.sidenav {
+	  padding-top: 15px;
+	}
+	.sidenav a {
+	  font-size: 18px;
+	}
+	.sidenav .closebtn {
+	  font-size: 30px;
+	  margin-left: 0;
+	}
+  }

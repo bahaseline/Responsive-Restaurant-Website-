@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Menu</title>
+  </head>
+  <style>
+    body,
+    html {
+      height: 50%;
+    }
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Amatic SC", sans-serif;
+    }
+    .menu {
+      display: none;
+      border-radius: 5%;
+    }
+    /* Style for the navigation menu */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #bf8040;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #ffff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #996633;
+      background-color: #cc8800;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style for the close button */
+    .sidenav .closebtn:hover {
+      color: #fff;
+    }
+
+    /* Style for the close button icon */
+    .sidenav .closebtn i {
+      color: #f2f2f2;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+      .sidenav .closebtn {
+        font-size: 30px;
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn" onclick="closeNav()"
+        ><i class="bx bx-x"></i
+      ></a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html">Order</a>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">THE MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-white">
+          <a
+            href="javascript:void(0)"
+            onclick="openMenu(event, 'Burger');"
+            id="myLink"
+          >
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-brown">
+              Burger
+            </div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-brown">
+              Salads
+            </div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-brown">
+              Starter
+            </div>
+          </a>
+        </div>
+
+        <div id="Burger" class="w3-container menu w3-padding-32 w3-white">
+          <h1>
+            <b>Golden</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span>
+          </h1>
+          <p class="w3-text-grey">
+            Αφράτο ψωμάκι με λαχταριστό μπιφτέκι, bacon, τριμμένο τυρί, τομάτα,
+            μαρούλι και μαγιονέζα.
+          </p>
+          <hr />
+
+          <h1>
+            <b>Club</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span>
+          </h1>
+          <p class="w3-text-grey">
+            Φρυγανισμένο ψωμάκι του τοστ με bacon, τυρί cheddar, καπνιστό
+            ζαμπόν, τομάτα, μαρούλι, μαγιονέζα και τηγανιτές πατατούλες
+          </p>
+          <hr />
+
+          <h1>
+            <b>Extreme Club Crisp</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span>
+          </h1>
+          <p class="w3-text-grey">
+            Φρυγανισμένο ψωμί του τοστ με τραγανό κοτόπουλο πανέ, bacon, τυρί
+            cheddar, τομάτα, μαρούλι, Thai sauce και τηγανιτές πατάτες.
+          </p>
+          <hr />
+
+          <h1>
+            <b>Chili</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span>
+          </h1>
+          <p class="w3-text-grey">
+            Τυρί cheddar πάνω σε ζουμερό μπιφτέκι, μέσα σε αφράτο ψωμάκι, με
+            τομάτα, μαρούλι, πίκλες, καυτερή chili sauce και μαγιονέζα.
+          </p>
+          <hr />
+
+          <h1>
+            <b>Cheese</b> <span class="w3-tag w3-red w3-round">Hot!</span
+            ><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span>
+          </h1>
+          <p class="w3-text-grey">
+            Κλασικό και διαχρονικό cheesburger με τυρί cheddar πάνω σε
+            λαχταριστό μπιφτέκι, με pickle sauce, μουστάρδα και κέτσαπ.
+          </p>
+          <hr />
+
+          <h1>
+            <b>BBQ Pulled Beef</b> <span class="w3-tag w3-grey w3-round">New</span
+            ><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span>
+          </h1>
+          <p class="w3-text-grey">
+            Μία μοναδική συνταγή Pulled Beef μέσα σε απολαυστικό
+            ψωμάκι, με τριμμένο τυρί edam, bacon, Hellmann's Original BBQ sauce,
+            κρεμμύδι και μαγιονέζα
+          </p>
+        </div>
+
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+          <h1>
+            <b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span>
+          </h1>
+          <p class="w3-text-grey">
+            Special sauce, mozzarella, parmesan, ground beef
+          </p>
+          <hr />
+
+          <h1>
+            <b>Ravioli</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span>
+          </h1>
+          <p class="w3-text-grey">Ravioli filled with cheese</p>
+          <hr />
+
+          <h1>
+            <b>Spaghetti Classica</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span>
+          </h1>
+          <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+          <hr />
+
+          <h1>
+            <b>Seafood pasta</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span>
+          </h1>
+          <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+        </div>
+
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+          <h1>
+            <b>Today's Soup</b>
+            <span class="w3-tag w3-grey w3-round">Seasonal</span
+            ><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span>
+          </h1>
+          <p class="w3-text-grey">Ask the waiter</p>
+          <hr />
+
+          <h1>
+            <b>Bruschetta</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span>
+          </h1>
+          <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+          <hr />
+
+          <h1>
+            <b>Garlic bread</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span>
+          </h1>
+          <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+          <hr />
+
+          <h1>
+            <b>Tomozzarella</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span>
+          </h1>
+          <p class="w3-text-grey">Tomatoes and mozzarella</p>
+        </div>
+        <br />
+      </div>
+    </div>
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-brown";
+      }
+      document.getElementById("myLink").click();
+    </script>
+  </body>
+</html>

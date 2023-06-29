@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant website</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- icon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- animation link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- header start here -->
+    <header>
+      <nav>
+        <img src="" />
+        <div>
+          <button
+            class="animate__animated animate__swing"
+            onclick="openOrderPage()"
+          >
+            <i class="bx bx-restaurant"></i> ORDER
+          </button>
+
+          <i class="bx bx-menu-alt-left" onclick="openNav()"></i>
+        </div>
+      </nav>
+
+      <script>
+        function openOrderPage() {
+          window.location.href = "order.html";
+        }
+
+        function openNav() {
+          var navigationMenu = document.getElementById("navigationMenu");
+          navigationMenu.style.display = "block";
+        }
+      </script>
+
+      <div class="content">
+        <a href="#" class="logo"></a>
+        <div>
+          <h3 class="sub-heading animate__animated animate__fadeInDown">
+            delicious
+          </h3>
+          <h1 class="heading animate__animated animate__fadeInDown">
+            <span>BURGER </span> CUISINE
+          </h1>
+          <h4 class="animate__animated animate__fadeInDown">
+            Order online or call <span>231 6022222</span>
+          </h4>
+        </div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()"
+          ><i class="bx bx-x"></i
+        ></a>
+        <a href="#">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+      </div>
+    </header>
+    <!-- header end here -->
+
+    <section class="our-story">
+      <div class="banner">
+        <h3 class="sub-heading">Discover</h3>
+        <h1 class="heading">OUR STORY</h1>
+      </div>
+      <blockquote>
+        "Our culinary journey began with a simple passion for flavors and a
+        desire to explore the world through food. We believe that cooking is an
+        art form that allows us to express our creativity and embrace new
+        experiences. From the bustling markets of Australia to the exotic spices
+        of the Bahamas, from the charming streets of Budapest to the vibrant
+        culinary scene of Moscow, we have been inspired by diverse cultures and
+        ingredients."
+      </blockquote>
+      <p>
+        Our path has led us to experiment with unique combinations and push the
+        boundaries of traditional recipes. We take pride in sourcing the finest
+        ingredients, whether it's hand-picked produce from local farmers or rare
+        spices from distant lands. Each dish we create tells a story, blending
+        innovation with tradition to delight the senses of our guests.
+      </p>
+      <p>
+        With every plate we serve, we strive to create an unforgettable dining
+        experience. From the first bite to the last, we aim to transport you on
+        a culinary adventure that tantalizes your taste buds and leaves you
+        craving for more. Join us as we continue to explore the world of
+        flavors, always seeking new inspirations and crafting dishes that
+        reflect our passion for the art of cooking.
+      </p>
+    </section>
+    <!-- our story section end -->
+
+    <!-- image-gallery section start -->
+
+    <section class="image-gallery">
+      <h3 class="sub-heading">image</h3>
+      <h1 class="heading">GALLERY</h1>
+
+      <div class="gallery">
+        <img src="img/photo14.jpeg" />
+        <img src="img/photo7.jpeg" />
+        <img src="img/photo8.jpeg" />
+        <img src="img/photo9.jpeg" />
+        <img src="img/photo10.jpeg" />
+        <img src="img/photo11.jpeg" />
+        <img src="img/photo12.jpeg" />
+        <img src="img/photo13.jpeg" />
+      </div>
+    </section>
+
+    <!-- image-gallery section end -->
+
+    <!-- our team-member section start -->
+
+    <section class="our-team">
+      <h3 class="sub-heading">Meet</h3>
+      <h1 class="heading">OUR TEAM</h1>
+
+      <div class="team-member">
+        <div>
+          <img src="img/chef1.jpeg" />
+          <h3>John Bennett</h3>
+          <h4>FRENCH CHEF</h4>
+        </div>
+
+        <div>
+          <img src="img/chef2.jpeg" />
+          <h3>Benjamin Doe</h3>
+          <h4>Greek CHEF</h4>
+        </div>
+
+        <div>
+          <img src="img/chef3.jpeg" />
+          <h3>Frank Rose</h3>
+          <h4>FOOD STYLE EXPERT</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- our team-member section end -->
+
+    <!-- our restaurant section start -->
+
+    <section class="our-restaurant">
+      <div class="image">
+        <img src="img/restaurant.jpeg" />
+      </div>
+
+      <div class="content">
+        <h3>Our</h3>
+        <h2>RESTAURANT</h2>
+        <p>
+          CAPACITIES<br />
+          Private Dinning - 30 <br />
+          Wedding - 20<br />
+          Conference - 15 <br />
+        </p>
+      </div>
+    </section>
+
+    <!-- our restaurant section end -->
+
+    <!-- our chef section start -->
+
+    <section class="philosphy">
+      <div class="content">
+        <h3>Meet</h3>
+        <h2>OUR CHEF</h2>
+        <p>
+          Exercitation photo booth stumptown tote bag Banksy, elit small batch
+          freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit
+          kale chips proident chillwave deep v laborum.
+        </p>
+
+        <p>
+          Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade
+          swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar
+          stumptown yr pop-up artisan sunt. Craft beer elit seitan exercitation,
+          photo booth
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="img/photo120.jpeg" />
+      </div>
+    </section>
+
+    <!-- our chef section end -->
+
+    <!-- footer section start -->
+
+    <section class="footer-section">
+      <div class="footer">
+        <div>
+          <h3>VISIT US</h3>
+          <h4>Tsimiski 35 <br />Thessaloniki, Greece</h4>
+        </div>
+
+        <div>
+          <h3>RESERVATION</h3>
+          <h4>
+            6980875678 <br />
+            Make a Reservation
+          </h4>
+        </div>
+
+        <div>
+          <h3>OPENING HOURS</h3>
+          <h4>
+            Mon - Fri 11:30am - 8pm<br />
+            Sat - Sun 11:30am - 9pm
+          </h4>
+        </div>
+      </div>
+
+      <!-- footer icon -->
+
+      <div class="footer-icon">
+        <ul>
+          <li><i class="bx bxl-facebook"></i></li>
+          <li><i class="bx bxl-instagram"></i></li>
+          <li><i class="bx bxl-pinterest"></i></li>
+          <li><i class="bx bxl-twitter"></i></li>
+        </ul>
+      </div>
+
+      <center>&copy; Copyright - Best Restaurant in Thessaloniki</center>
+    </section>
+
+    <!-- footer section end -->
+
+    <!-- javascript code -->
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "350px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0px";
+      }
+    </script>
+  </body>
+</html>
